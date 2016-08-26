@@ -1,30 +1,34 @@
 package org.fundacionjala.Shapes;
 
-import org.fundacionjala.Shapes.Square;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by Lion on 8/25/2016.
+ * Test for {@Link Square}
  */
-public class SquareTest {
 
-    public static final double PRECISION = 0.5;
+public class SquareTest {
+    private Shapes square;
+    private static final double DELTA = 0.5;
+
+    @Before
+    public void setUp() {
+        final int side = 5;
+        square = new Square(side);
+    }
 
     @Test
     public void test_calculateArea_verifyTheCalculationOfTheSquareArea() {
-        Shapes square = new Square(5.56);
-        double area = square.calculateArea();
-        assertEquals(area, 31, PRECISION);
+        final double resultArea = 25;
+        assertEquals(square.calculateArea(), resultArea, DELTA);
     }
 
     @Test
     public void test_CalculatePerimeter_verifyTheCalculationOfTheSquarePerimeter() {
-        Shapes square = new Square(6.2);
-        double perimeter = square.calculatePerimeter();
-        assertEquals(perimeter, 25, PRECISION);
+        final double resultPerimeter = 20;
+        assertEquals(square.calculatePerimeter(), resultPerimeter, DELTA);
     }
-
 
 }

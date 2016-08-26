@@ -1,24 +1,34 @@
 package org.fundacionjala.Shapes;
 
 /**
- * Created by Lion on 8/25/2016.
+ * This class calculates the area and perimeter  for a circle
  */
-public class Circle extends Shapes {
+public class Circle implements Shapes {
     private double radius;
 
     public Circle(double radius) {
         this.radius = radius;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public double calculateArea() {
         return Math.pow(radius, 2) * Math.PI;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public double calculatePerimeter() {
         return radius * 2 * Math.PI;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public String getKind() {
         return "Iam a Circle";
     }
+
 }

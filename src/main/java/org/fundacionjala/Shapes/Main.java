@@ -17,6 +17,6 @@ public class Main {
         kind = new Triangle(10, 2);
         System.out.println(kind.getKind() + MY_AREA + kind.calculatePerimeter());
         System.out.println(kind.getKind() + MY_PERIMETER + kind.calculateArea());
-
     }
+
 }

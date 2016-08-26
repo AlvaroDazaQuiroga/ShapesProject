@@ -1,31 +1,34 @@
 package org.fundacionjala.Shapes;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
 /**
- * Created by Lion on 8/25/2016.
+ * Test for {@Link Triangle}
  */
 public class TriangleTest {
+    private Shapes shapes;
+    public static final double DOUBLE = 0.5;
 
-    public static final double PRECISION = 0.5;
+    @Before
+    public void setUp() {
+        final int base=10;
+        final int height=5;
+        shapes = new Triangle(base, height);
+    }
 
     @Test
     public void test_calculateArea_verifyTheCalculationOfTriangleArea() {
-        Shapes triangle = new Triangle(10, 5);
-        double area = triangle.calculateArea();
-        assertEquals(area, 25, PRECISION);
-
+      final double resultArea =25 ;
+        assertEquals(shapes.calculateArea(), resultArea, DOUBLE);
     }
 
     @Test
     public void test_calculatePerimeter_verifyTheCalculationOfTriangleEscalenoPerimeter() {
-        Shapes triangle = new Triangle(10, 5);
-        double perimeter = triangle.calculatePerimeter();
-        assertEquals(perimeter, 15, PRECISION);
-
+        final double resultPerimeter = 25;
+        assertEquals(shapes.calculateArea(), resultPerimeter, DOUBLE);
     }
-
 
 }

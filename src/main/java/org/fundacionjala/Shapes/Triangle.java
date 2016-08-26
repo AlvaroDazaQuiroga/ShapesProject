@@ -1,9 +1,9 @@
 package org.fundacionjala.Shapes;
 
 /**
- * Created by Lion on 8/25/2016.
+ * This class calculate the Area and Perimeter for a Triangle
  */
-public class Triangle extends Shapes {
+public class Triangle implements Shapes {
     private double height;
     private double base;
 
@@ -11,15 +11,21 @@ public class Triangle extends Shapes {
         this.height = height;
         this.base = base;
     }
-
+    /**
+     *  {@inheritDoc}
+     */
     public double calculateArea() {
         return (base * height) / 2;
     }
-
+    /**
+     *  {@inheritDoc}
+     */
     public double calculatePerimeter() {
         return base * 3;
     }
-
+    /**
+     *  {@inheritDoc}
+     */
     public String getKind() {
         return "Iam a Triangle";
     }

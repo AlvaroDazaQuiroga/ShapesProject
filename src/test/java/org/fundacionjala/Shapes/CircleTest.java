@@ -1,29 +1,35 @@
 package org.fundacionjala.Shapes;
 
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
 /**
- * Created by Lion on 8/25/2016.
+ * Test for {@Link Circle}
  */
 public class CircleTest {
 
-    public static final double PRECISION = 0.5;
+    private Shapes shapes;
+    public static final double DELTA = 0.5;
 
-    @Test
-    public void test_calculateArea_verifyTheCalculationOfCircleArea() {
-        Shapes circle = new Circle(4);
-        double area = circle.calculateArea();
-        assertEquals(area, 50, PRECISION);
+    @Before
+    public void setUp() {
+        final int radio = 5;
+        shapes = new Circle(radio);
     }
 
     @Test
-    public void test_calculatePerimeter_varifyTheCalculationOfCIrclePerimeter() {
-        Shapes circle = new Circle(5);
-        double perimeter = circle.calculatePerimeter();
-        assertEquals(perimeter, 31, PRECISION);
+    public void test_calculateArea_verifyTheCalculationOfCircleArea() {
+       final double resultArea = 78.5;
+        assertEquals(shapes.calculateArea(), resultArea, DELTA);
+    }
+
+    @Test
+    public void test_calculatePerimeter_varifyTheCalculationOfCirclePerimeter() {
+        final double resultPerimeter = 31;shapes.calculatePerimeter();
+        assertEquals(shapes.calculatePerimeter(), resultPerimeter, DELTA);
     }
 
 }

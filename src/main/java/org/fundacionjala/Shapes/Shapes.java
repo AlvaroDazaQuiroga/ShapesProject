@@ -1,10 +1,27 @@
 package org.fundacionjala.Shapes;
 
 /**
- * Created by Lion on 8/25/2016.
+ * Interface class for calculate the area and perimeter
  */
-abstract class Shapes {
-    abstract public double calculateArea();
-    abstract public double calculatePerimeter();
-    abstract public String getKind();
+interface Shapes {
+    /**
+     * Calculates the area
+     *
+     * @return a double value
+     */
+    double calculateArea();
+
+    /**
+     * Calculates the Perimeter
+     *
+     * @return a double value
+     */
+    double calculatePerimeter();
+
+    /**
+     * Return some text
+     *
+     * @return a String value
+     */
+    String getKind();
 }
