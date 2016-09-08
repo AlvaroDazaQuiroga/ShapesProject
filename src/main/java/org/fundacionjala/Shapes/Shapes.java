@@ -1,4 +1,4 @@
-package org.fundacionjala.Shapes;
+package org.fundacionjala.shapes;
 
 /**
  * Interface class for calculate the area and perimeter

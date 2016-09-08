@@ -1,10 +1,10 @@
-package org.fundacionjala.Shapes;
+package org.fundacionjala.shapes;
 
 /**
  * This class calculates the area and perimeter  for a circle
  */
 public class Circle implements Shapes {
-    private double radius;
+    private final double radius;
 
     public Circle(double radius) {
         this.radius = radius;

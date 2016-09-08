@@ -1,4 +1,4 @@
-package org.fundacionjala.Shapes;
+package org.fundacionjala.shapes;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -6,17 +6,18 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Test for {@Link Square}
+ * Test for {@Link Rectangle}
  */
 
-public class SquareTest {
+public class RectangleTest {
     private Shapes square;
     private static final double DELTA = 0.5;
 
     @Before
     public void setUp() {
-        final int side = 5;
-        square = new Square(side);
+        final int height = 5;
+        final int wide = 5;
+        square = new Rectangle(height, wide);
     }
 
     @Test

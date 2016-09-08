@@ -1,11 +1,11 @@
-package org.fundacionjala.Shapes;
+package org.fundacionjala.shapes;
 
 /**
  * This class calculate the Area and Perimeter for a Triangle
  */
 public class Triangle implements Shapes {
-    private double height;
-    private double base;
+    private final double height;
+    private final double base;
 
     public Triangle(double height, double base) {
         this.height = height;

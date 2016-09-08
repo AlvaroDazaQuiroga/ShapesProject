@@ -1,4 +1,4 @@
-package org.fundacionjala.Shapes;
+package org.fundacionjala.shapes;
 
 
 import org.junit.Before;
@@ -22,13 +22,13 @@ public class CircleTest {
 
     @Test
     public void test_calculateArea_verifyTheCalculationOfCircleArea() {
-       final double resultArea = 78.5;
+        final double resultArea = 78.5;
         assertEquals(shapes.calculateArea(), resultArea, DELTA);
     }
 
     @Test
     public void test_calculatePerimeter_varifyTheCalculationOfCirclePerimeter() {
-        final double resultPerimeter = 31;shapes.calculatePerimeter();
+        final double resultPerimeter = 31;
         assertEquals(shapes.calculatePerimeter(), resultPerimeter, DELTA);
     }
 
