@@ -10,26 +10,26 @@ import static org.junit.Assert.assertEquals;
  */
 
 public class RectangleTest {
-    private Shapes square;
+    private Shapes rectangle;
     private static final double DELTA = 0.5;
 
     @Before
     public void setUp() {
         final int height = 5;
         final int wide = 5;
-        square = new Rectangle(height, wide);
+        rectangle = new Rectangle(height, wide);
     }
 
     @Test
-    public void test_calculateArea_verifyTheCalculationOfTheSquareArea() {
+    public void test_calculateArea_verifyTheCalculationOfTheRectangleArea() {
         final double resultArea = 25;
-        assertEquals(square.calculateArea(), resultArea, DELTA);
+        assertEquals(resultArea, rectangle.calculateArea(), DELTA);
     }
 
     @Test
-    public void test_CalculatePerimeter_verifyTheCalculationOfTheSquarePerimeter() {
+    public void test_CalculatePerimeter_verifyTheCalculationOfTheRectanglePerimeter() {
         final double resultPerimeter = 20;
-        assertEquals(square.calculatePerimeter(), resultPerimeter, DELTA);
+        assertEquals(resultPerimeter, rectangle.calculatePerimeter(), DELTA);
     }
 
 }

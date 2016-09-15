@@ -11,22 +11,26 @@ public class Triangle implements Shapes {
         this.height = height;
         this.base = base;
     }
+
     /**
-     *  {@inheritDoc}
+     * {@inheritDoc}
      */
     public double calculateArea() {
         return (base * height) / 2;
     }
+
     /**
-     *  {@inheritDoc}
+     * {@inheritDoc}
      */
     public double calculatePerimeter() {
         return base * 3;
     }
+
     /**
-     *  {@inheritDoc}
+     * {@inheritDoc}
      */
     public String getKind() {
         return "Iam a Triangle";
     }
+
 }

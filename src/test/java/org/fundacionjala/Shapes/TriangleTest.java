@@ -22,13 +22,13 @@ public class TriangleTest {
     @Test
     public void test_calculateArea_verifyTheCalculationOfTriangleArea() {
         final double resultArea = 25;
-        assertEquals(shapes.calculateArea(), resultArea, DOUBLE);
+        assertEquals(resultArea, shapes.calculateArea(), DOUBLE);
     }
 
     @Test
     public void test_calculatePerimeter_verifyTheCalculationOfTriangleEscalenoPerimeter() {
         final double resultPerimeter = 25;
-        assertEquals(shapes.calculateArea(), resultPerimeter, DOUBLE);
+        assertEquals(resultPerimeter, shapes.calculateArea(), DOUBLE);
     }
 
 }
